@@ -12,7 +12,7 @@ const META = {
   github: "https://github.com/syarique31",
   linkedin: "https://www.linkedin.com/in/syariques/",
   location: "Kingston, Toronto",
-  resume: "/Syarique Syahrizal Resume.pdf",
+  resume: "/Syarique-Syahrizal-Resume.pdf",
 };
 
 const PROJECTS = [
