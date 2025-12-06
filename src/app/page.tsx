@@ -30,6 +30,13 @@ const PROJECTS = [
       "Python-based hash cracking tool that reads wordlists and attempts to recover plaintext from cryptographic hashes. Supports MD5, SHA1, and SHA256 algorithms.",
     meta: "Cybersecurity · Python · Hashing",
   },
+  {
+    title: "Web Exploitation Testing Lab",
+    href: "https://github.com/syarique31/Web-Exploitation-Testing-Lab-",
+    summary:
+      "Docker-based penetration testing lab using Kali and DVWA to practice Nmap reconnaissance, command injection exploitation, and reverse shells.",
+    meta: "Offensive Security · Docker · Web Exploitation",
+  },
 ];
 
 const CTF = [
@@ -46,7 +53,6 @@ const CTF = [
     meta: "CTF · Logs · Threat Analysis",
   },
 ];
-
 
 function Container({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto max-w-3xl px-5">{children}</div>;
@@ -112,7 +118,13 @@ function SimpleList({
   );
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="py-10">
       <Container>
@@ -174,22 +186,19 @@ export default function MinimalPortfolio() {
       <Section title="About">
         <div className="prose prose-invert max-w-none text-zinc-300">
           <p>
-            I’m {META.name}, an international student from Saudi Arabia who has lived in five different countries across Asia, the United States, Canada, and the Middle East. 
-            I graduated from St. Andrew’s College in Toronto and now study Cybersecurity at Queen’s University. 
+            I’m {META.name}, an international student from Saudi Arabia who has lived in five different countries across Asia, the United States, Canada, and the Middle East. I graduated from St. Andrew’s College in Toronto and now study Cybersecurity at Queen’s University. 
           </p>
           
           <p className="mt-4">
-            I’m passionate about ethical hacking and cybersecurity defense, and I’ve been focusing on the blue team side, learning how to detect, investigate, and respond to security incidents. I’m especially interested in SOC analysis, where I use tools like Splunk to monitor alerts, analyze threats,
-            and strengthen system security. In the future, I hope to move into penetration testing and red teaming to gain experience from both the defensive and offensive sides of cybersecurity.
-          
+            I’m passionate about ethical hacking and cybersecurity defense, and I’ve been focusing on the blue team side, learning how to detect, investigate, and respond to security incidents. I’m especially interested in SOC analysis, where I use tools like Splunk to monitor alerts, analyze threats, and strengthen system security. In the future, I hope to move into penetration testing and red teaming to gain experience from both the defensive and offensive sides of cybersecurity.
           </p>
+
           <p className="mt-4">
-           Outside of school, I enjoy running, working out, playing soccer, pickleball, volleyball, and golf, and I find cooking a great way to relax.
-           I’ve also started day trading as a side hustle, which has helped me build patience, discipline, and focus. Been collecting Lego Speed Champions and trying to complete the F1 grid (still missing a few cars).
+            Outside of school, I enjoy running, working out, playing soccer, pickleball, volleyball, and golf. I’ve also started day trading as a side hustle, which has helped me build patience, discipline, and focus. I collect Lego Speed Champions and I am working on completing the full F1 grid.
           </p>
+
           <p className="mt-4">
-            Right now, I’m working on CTFs like picoCTF, building server-based cybersecurity projects, and creating Splunk dashboards to visualize and analyze data. I also share 
-            my projects and write-ups online to help others learn. My goal is to show that with consistency and curiosity, anyone can build a meaningful career in cybersecurity, no matter where they come from.
+            Right now, I’m working on CTFs like picoCTF, building server-based cybersecurity projects, and creating Splunk dashboards to visualize and analyze data. I also share my projects and write-ups online to help others learn. My goal is to show that with consistency and curiosity, anyone can build a meaningful career in cybersecurity.
           </p>
         </div>
       </Section>
