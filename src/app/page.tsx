@@ -16,6 +16,15 @@ const META = {
 };
 
 const PROJECTS = [
+
+  {
+  title: "Risk-Driven Cyber Threat Prioritization Engine",
+  href: "https://github.com/syarique31/risk-driven-cyber-threat-prioritization-engine",
+  summary:
+    "Python-based risk prioritization pipeline that generates, normalizes, and scores security incidents to support risk-based SOC triage and decision-making. Incorporates likelihood, impact, exploitability, and business context using NIST CSF and MITRE ATT&CK.",
+  meta: "Python · Risk Scoring · NIST CSF · MITRE ATT&CK · SOC",
+  },
+
   {
     title: "Security Analysis Dashboard",
     href: "https://github.com/syarique31/Network-Analysis-Dashboard",
